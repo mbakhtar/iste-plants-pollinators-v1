@@ -5,7 +5,7 @@
 
 This repository can be added as an **extension** in MakeCode.
 
-* open [https://makecode.microbit.org/](https://makecode.microbit.org/)
+* open [Plants & Pollinators Tutorial v1](https://makecode.microbit.org/#tutorial:github:mbakhtar/iste-plants-pollinators-v1/plantsnpollinators)
 * click on **New Project**
 * click on **Extensions** under the gearwheel menu
 * search for **https://github.com/mbakhtar/iste-plants-pollinators-v1** and import
