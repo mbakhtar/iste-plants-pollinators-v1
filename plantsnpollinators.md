@@ -10,28 +10,27 @@ Climate Action Kit board.
 ![breakout board](https://raw.githubusercontent.com/mbakhtar/wind-turbine-lesson-tutorial/master/breakout-resized.png)
 
 ## Step 2 @showhint
-Click on the button to the right of download and follow the steps to pair your micro:bit.
+Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/mbakhtar/iste-electric-vehicle-v1/master/pair%20microbit-280x203.gif)
 
 ## Step 3 
-Click on the ``||Variables:Variables||`` drawer. 
-To create a new ``||Variables:Variable||`` click on |Make a Variable|. 
+Click ``||Variables:Variables||``. Click on |Make a Variable| to create a new ``||Variables:Variable||``.  
 Name it ``||Variables:bugVisits||``.
 
 ## Step 4
-Now under the ``||Variables:Variables||`` drawer ``||Variables:bugVisits||`` exists 
-and three additional blocks are available.
+Inside ``||Variables:Variables||`` there is ``||Variables:bugVisits||``
+and more blocks.
 
 ## Step 5
-Click on the ``||Variables:Variables||`` and add ``||Variables:set bugVisits to 0||`` block
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set bugVisits to 0||`` block
 inside ``||basic:on start||`` block.
 ```blocks
 let bugVisits = 0
 basic.forever(function (){})
 ```
 ## Step 6
-Click on the ``||basic:Basic||`` drawer to add ``||basic:showNumber||`` block
-inside ``||basic:on start||`` block after ``||Variables:set bugVisits to 0||`` block.
+Click ``||basic:Basic||`` drag and drop ``||basic:showNumber||`` block
+under ``||Variables:set bugVisits to 0||`` block.
 ```blocks
 let bugVisits = 0
 basic.showNumber(0)
@@ -39,8 +38,8 @@ basic.forever(function (){})
 ```
 
 ## Step 7
-Click on the ``||logic:Logic||`` drawer to add ``||logic:if true then||`` 
-conditional block inside the ``||basic:forever||`` loop.
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` 
+conditional block inside ``||basic:forever||`` loop.
 ```blocks
 let bugVisits = 0
 basic.showNumber(0)
@@ -50,9 +49,8 @@ basic.forever(function (){
 })
 ```
 ## Step 8
-Click on the ``||fwdSensors:Sensors||`` drawer.
-Drag the ``||fwdSensors:touch pressed||`` block and add it to the 
-``||logic:if true then||`` block to replace the ``||logic:true||`` condition.
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:touch pressed||`` block to replace ``||logic:true||`` condition of   
+``||logic:if true then||`` block.
 ```blocks
 let bugVisits = 0
 basic.showNumber(0)
@@ -63,9 +61,9 @@ basic.forever(function () {
 ```
 
 ## Step 9
-Click on the ``||Variables:Variables||`` drawer and drag the
- ``||Variables:change bugVisits by 1||`` block and place it inside the
- ``||logic:if then||`` conditional block.
+Click ``||Variables:Variables||`` drag and drop
+ ``||Variables:change bugVisits by 1||`` block inside
+ ``||logic:if||`` ``||fwdSensors:touch pressed||`` ``||logic: then||`` block.
 ```blocks
 let bugVisits = 1
 basic.showNumber(0)
@@ -76,9 +74,7 @@ basic.forever(function () {
 })
 ```
 ## Step 10
-Click on the ``||fwdSensors:Sensors||`` drawer and drag the
-``||fwdSensors:set all ledRing LEDs to 10||`` block. Place it under the 
-``||Variables:change bugVisits by 1||`` block.
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||`` block under ``||Variables:change bugVisits by 1||`` block.
 ```blocks
 let bugVisits = 1
 basic.showNumber(0)
@@ -90,8 +86,7 @@ basic.forever(function () {
 })
 ```
 ## Step 11
-Click on ``||basic:Basic||`` drawer and drag the``||basic:show number||`` block
-place it under the ``||fwdSensors:set all ledRing LEDs to 10||`` block.
+Click ``||basic:Basic||`` drag and drop ``||basic:show number||`` block under ``||fwdSensors:set all ledRing LEDs to 10||`` block.
 ```blocks
 let bugVisits = 1
 basic.showNumber(0)
@@ -104,8 +99,8 @@ basic.forever(function () {
 })
 ```
 ## Step 11
-Click on ``||fwdSensors:Sensors||`` block and drag the ``||fwdSensors:set all ledRing LEDs to 10||``
-block to place it inside the ``||basic:forever||`` loop after the ``||basic:show number||``
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||``
+block under ``||basic:show number||``
 block.
 ```blocks
 let bugVisits = 1
@@ -120,9 +115,9 @@ basic.forever(function () {
 })
 ```
 ## Step 12
-Click on the ``||Variables:Variables||`` drawer and drag the ``||Variables:bugVisits||``
-and place it in both ``||basic:show number||`` blocks to replace the ``||0||``.
-Change the value of the ``||fwdSensors:LED Ring||`` to ``||0||`` as well. 
+Click ``||Variables:Variables||`` drag and drop ``||Variables:bugVisits||``
+to replace the ``||0||`` in both ``||basic:show number||``.
+Change value of ``||fwdSensors:LED Ring||`` to ``||0||``. 
 ```blocks
 let bugVisits = 1
 basic.showNumber(bugVisits)
@@ -136,6 +131,5 @@ basic.forever(function () {
 })
 ```
 ## Step 13
-Congratulations on completing the code. 
-Click ``|Download|`` and test. 
-Go back to the lesson for more activities and extensions.
+Click ``|Download|`` and test your code. 
+Congratulations on completing your Plants and Pollinator Project! - Go back to the lesson for more activities and extensions.
