@@ -136,4 +136,5 @@ basic.forever(function () {
 ```
 ## Step 13
 Click ``|Download|`` and test your code. 
-Congratulations on completing your Plants and Pollinator Project! - Go back to the lesson for more activities and extensions.
+Congratulations on completing your Plants and Pollinator Project! - Go back to the lesson for more activities and extensions. 
+Click [here](https://forwardedu.com/course/bee-counter-the-pollinator-protectors/) to go back to the lesson.
