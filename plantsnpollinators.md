@@ -139,4 +139,4 @@ basic.forever(function () {
 ## Step 16
 Click ``|Download|`` and test your code. 
 Congratulations on completing your Plants and Pollinator Project! - Go back to the lesson for more activities and extensions.
-Want to check your code click [here]().
+Want to check your code click [here](https://makecode.microbit.org/_bs6eYwWVx8Wi).
