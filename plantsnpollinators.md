@@ -79,32 +79,33 @@ basic.forever(function () {
 })
 ```
 ## Step 12
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||`` block under ``||Variables:change bugVisits by 1||`` block.
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block under ``||Variables:change bugVisits by 1||`` block.
+Select any colour of ``||fwdSensors:LED||``
 ```blocks
 let bugVisits = 1
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0)
         }
 })
 ```
 ## Step 13
-Click ``||basic:Basic||`` drag and drop ``||basic:show number||`` block under ``||fwdSensors:set all ledRing LEDs to 10||`` block.
+Click ``||basic:Basic||`` drag and drop ``||basic:show number||`` block under ``||fwdSensors:set all ledRing LEDs to||`` block.
 ```blocks
 let bugVisits = 1
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0)
         basic.showNumber(0)
     }
 })
 ```
 ## Step 14
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||``
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||``
 block under ``||basic:show number||``
 block.
 ```blocks
@@ -113,28 +114,29 @@ basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0)
         basic.showNumber(0)
-        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(15)
     }
 })
 ```
 ## Step 15
 Click ``||Variables:Variables||`` drag and drop ``||Variables:bugVisits||``
 to replace the ``||0||`` in both ``||basic:show number||``.
-Change value of second ``||fwdSensors:LED Ring||`` block to ``||0||``. 
+Change colour of second ``||fwdSensors:LED Ring||`` block to ``||black||``. 
 ```blocks
 let bugVisits = 1
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
-        basic.showNumber(bugVisits )
         fwdSensors.ledRing.fwdSetAllPixelsColour(0)
+        basic.showNumber(bugVisits )
+        fwdSensors.ledRing.fwdSetAllPixelsColour(15)
     }
 })
 ```
 ## Step 16
 Click ``|Download|`` and test your code. 
 Congratulations on completing your Plants and Pollinator Project! - Go back to the lesson for more activities and extensions.
+Want to check your code click [here]().
